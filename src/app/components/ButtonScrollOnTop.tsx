@@ -3,24 +3,27 @@ import styled from "@emotion/styled";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
 const ButtonScrollOnTopStyled = styled.div`
-  opacity: 0.5;
-  background-color: #ff014f;
+  background: linear-gradient(145deg, #e2e8ec73, #ffffff);
   width: 40px;
   height: 40px;
   position: fixed;
   bottom: 8px;
   right: 20px;
-  border-radius: 5px;
+  border-radius: 50%;
+  transition: 0.4s;
   border: none;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   &:hover {
-    opacity: 1;
+    background: #f1073d;
+    .icon-double-up {
+      color: #ffffff;
+    }
   }
   .icon-double-up {
     font-size: 20px;
-    color: #fff;
+    color: #f1073d;
   }
 `;
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { ContentLayoutStyled, TabStyled, ContentStyled } from "./styles";
 import Tab from "./Tab";
 
+import About from "../About";
+
 interface ContentProps {}
 
 const TAB_INDEX = {
@@ -41,7 +43,7 @@ const Content: React.FC<ContentProps> = () => {
 
   return (
     <ContentLayoutStyled>
-      <TabStyled className="w-1/4 mr-7">
+      <TabStyled className="lg:w-1/4 lg:mr-7 w-full mr-0 flex lg:justify-start justify-around">
         {TabItems.map(({ id, title }) => (
           <Tab
             key={id}
@@ -51,8 +53,8 @@ const Content: React.FC<ContentProps> = () => {
           />
         ))}
       </TabStyled>
-      <ContentStyled className="w-3/4">
-        {isActive === TAB_INDEX.aboutTab && <div>TAb A</div>}
+      <ContentStyled className="lg:w-3/4 w-full">
+        {isActive === TAB_INDEX.aboutTab && <About />}
         {isActive === TAB_INDEX.resumeTab && <div>TAb B</div>}
       </ContentStyled>
     </ContentLayoutStyled>

@@ -7,10 +7,10 @@ export const Container = styled.div`
   padding: 0px 15px;
 
   @media screen and (min-width: 576px) {
-    max-width: 540px;
+    max-width: 576px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 720px;
+    max-width: 790px;
   }
   @media screen and (min-width: 992px) {
     max-width: 960px;
@@ -25,14 +25,6 @@ export const Wrapper = styled.div`
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 40px;
-  /* @media screen and (max-width: 1100px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  @media screen and (max-width: 768px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  } */
 `;
 
 export const Row = styled.div`

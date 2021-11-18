@@ -1,6 +1,7 @@
 import React from "react";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
+import ReactRotatingText from "react-rotating-text";
 
 import { InformationStyled } from "./styles";
 import { informations } from "../data";
@@ -16,7 +17,11 @@ const Information = () => {
           {informations.name}
         </div>
         <div className="position text-gray-2 text-lg font-medium">
-          I am a <span className="text-red-1">{informations.position[0]}</span>
+          I am a{" "}
+          <span className="text-red-1 text-xl">
+            {" "}
+            <ReactRotatingText items={informations.position} />
+          </span>
         </div>
         <div className="flex items-center mt-4 pt-4 link-contact-wrapper">
           <a

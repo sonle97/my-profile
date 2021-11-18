@@ -10,9 +10,9 @@ interface InfoItemProps {
 
 const InfoItem = ({ title, text, className }: InfoItemProps) => {
   return (
-    <div className={`text-gray-1 text-lg my-3 ${className && className}`}>
+    <div className={`text-gray-2 text-lg my-3 ${className && className}`}>
       <div className="text-sm text-gray-3 uppercase">{title}</div>
-      {text}
+      <span className="font-medium">{text}</span>
     </div>
   );
 };

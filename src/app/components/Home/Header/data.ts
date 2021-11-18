@@ -1,9 +1,9 @@
-import avatar from "../../../../assets/img/avatar.png";
+import avatar from "../../../../assets/img/myImages/son.jpg";
 
 export const informations = {
   avatar,
   name: "Le Quang Son",
-  position: ["Developer", "Blogger", "Designer", "Freelancer", "Yortuber"],
+  position: ["Developer", "Technician", "Freelancer", "Blogger", "Designer"],
   facebook: "https://www.facebook.com/son.lequang.97",
   instagram: "https://www.instagram.com/son_lq.97/",
   linkedin: "",
