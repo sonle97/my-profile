@@ -5,7 +5,7 @@ import { HelmetProvider } from "react-helmet-async";
 
 import "./assets/styles/index.css";
 import { App } from "./app";
-import Toast from "./app/ui/Toast";
+import Toast from "./app/components/ui/Toast";
 
 ReactDOM.render(
   <HelmetProvider>

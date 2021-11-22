@@ -1,6 +1,9 @@
 import { FaEdit } from "react-icons/fa";
 import brand from "../../../../../assets/img/brand.png";
 import about_img from "../../../../../assets/img/myImages/about_img.jpg";
+import about_img5 from "../../../../../assets/img/myImages/about_img5.jpg";
+import about_img3 from "../../../../../assets/img/myImages/about_img3.jpg";
+import about_img4 from "../../../../../assets/img/myImages/about_img4.jpg";
 
 interface WhatIamDoingProps {
   icon: any;
@@ -14,7 +17,7 @@ interface OurTrustedClientsProps {
 }
 
 export const AboutMe = {
-  images: [about_img],
+  images: [about_img, about_img5, about_img3, about_img4],
   description:
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum in eos saepe ipsa cupiditate accusantium voluptatibus quidem nam, reprehenderit, et necessitatibus adipisci.",
   supports: ["Web Design Full stack", "24/7 Support", "Unlimited Revisions"],

@@ -3,6 +3,10 @@ import { ContentLayoutStyled, TabStyled, ContentStyled } from "./styles";
 import Tab from "./Tab";
 
 import About from "../About";
+import Resume from "../Resume";
+import Portfolio from "../Portfolio";
+import Blog from "../Blog";
+import Contact from "../Contact";
 
 interface ContentProps {}
 
@@ -42,22 +46,28 @@ const Content: React.FC<ContentProps> = () => {
   const [isActive, setIsActive] = useState(TAB_INDEX.aboutTab);
 
   return (
-    <ContentLayoutStyled>
-      <TabStyled className="lg:w-1/4 lg:mr-7 w-full mr-0 flex lg:justify-start justify-around">
-        {TabItems.map(({ id, title }) => (
-          <Tab
-            key={id}
-            title={title}
-            onItemClicked={() => setIsActive(id)}
-            isActive={isActive === id}
-          />
-        ))}
-      </TabStyled>
-      <ContentStyled className="lg:w-3/4 w-full">
-        {isActive === TAB_INDEX.aboutTab && <About />}
-        {isActive === TAB_INDEX.resumeTab && <div>TAb B</div>}
-      </ContentStyled>
-    </ContentLayoutStyled>
+    <>
+      <ContentLayoutStyled>
+        <TabStyled className="lg:w-1/5 lg:mr-7 w-full mr-0 flex lg:justify-start justify-around">
+          {TabItems.map(({ id, title }) => (
+            <Tab
+              key={id}
+              title={title}
+              onItemClicked={() => setIsActive(id)}
+              isActive={isActive === id}
+            />
+          ))}
+        </TabStyled>
+
+        <ContentStyled className="lg:w-4/5 w-full">
+          {isActive === TAB_INDEX.aboutTab && <About />}
+          {isActive === TAB_INDEX.resumeTab && <Resume />}
+          {isActive === TAB_INDEX.blogTab && <Blog />}
+          {isActive === TAB_INDEX.portfolioTab && <Portfolio />}
+          {isActive === TAB_INDEX.contactTab && <Contact />}
+        </ContentStyled>
+      </ContentLayoutStyled>
+    </>
   );
 };
 

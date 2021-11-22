@@ -7,7 +7,7 @@ const ButtonScrollOnTopStyled = styled.div`
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 8px;
+  bottom: 12px;
   right: 20px;
   border-radius: 50%;
   transition: 0.4s;
@@ -15,6 +15,7 @@ const ButtonScrollOnTopStyled = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 99;
   &:hover {
     background: #f1073d;
     .icon-double-up {
@@ -24,6 +25,9 @@ const ButtonScrollOnTopStyled = styled.div`
   .icon-double-up {
     font-size: 20px;
     color: #f1073d;
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 `;
 

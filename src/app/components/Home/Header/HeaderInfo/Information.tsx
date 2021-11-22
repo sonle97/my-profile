@@ -1,16 +1,20 @@
 import React from "react";
-import { FiFacebook, FiLinkedin } from "react-icons/fi";
-import { AiOutlineInstagram } from "react-icons/ai";
 import ReactRotatingText from "react-rotating-text";
 
 import { InformationStyled } from "./styles";
 import { informations } from "../data";
+import LinkedContact from "../../../ui/LinkedContact";
 
 const Information = () => {
   return (
     <InformationStyled className="flex items-center ">
       <div className="avatar">
-        <img src={informations.avatar} alt="avatar" />
+        <img
+          src={informations.avatar}
+          alt="avatar"
+          className="cursor-pointer"
+          onClick={() => window && window.open(informations.avatar, "_blank")}
+        />
       </div>
       <div className="info">
         <div className="name md:text-8 text-2xl	text-gray-1 font-bold mb-3 ">
@@ -23,32 +27,8 @@ const Information = () => {
             <ReactRotatingText items={informations.position} />
           </span>
         </div>
-        <div className="flex items-center mt-4 pt-4 link-contact-wrapper">
-          <a
-            href={informations.facebook}
-            target="_blank"
-            rel="noreferrer"
-            className="link-contact"
-          >
-            <FiFacebook size={20} />
-          </a>
-          <a
-            href={informations.instagram}
-            target="_blank"
-            rel="noreferrer"
-            className="link-contact mx-4"
-          >
-            <AiOutlineInstagram size={20} />
-          </a>
-          <a
-            href={informations.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="link-contact"
-          >
-            <FiLinkedin size={20} />
-          </a>
-        </div>
+
+        <LinkedContact informations={informations} className="mt-4 pt-4" />
       </div>
     </InformationStyled>
   );

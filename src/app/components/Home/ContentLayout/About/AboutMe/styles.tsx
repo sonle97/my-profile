@@ -18,6 +18,13 @@ export const AboutMeStyled = styled.div`
         transform: scale(1.08);
       }
     }
+    .swiper-container {
+      .swiper-pagination {
+        .swiper-pagination-bullet-active {
+          background: #ff014f;
+        }
+      }
+    }
   }
   .info-content-wrapper {
     padding: 0 15px;

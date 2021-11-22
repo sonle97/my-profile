@@ -13,9 +13,9 @@ const Tab: React.FC<TabIndexProps> = (props) => {
   return (
     <div
       onClick={onItemClicked}
-      className={`
-        flex items-center items-center py-4 px-8 cursor-pointer lg:mb-1 mb-0 lg:mr-0 mr-1 
-        justify-center font-medium hover:bg-red-3 hover:text-white rounded-xl text-lg ${
+      className={`tab-item leading-none
+        flex items-center items-center py-4 md:px-8 px-5 cursor-pointer lg:mb-1 mb-0 lg:mr-0 mr-1 
+        justify-center font-medium hover:bg-red-3 hover:text-white rounded-xl md:text-lg text-sm ${
           className ? className : ""
         }
         ${isActive && "pointer-events-none text-white bg-red-3"}

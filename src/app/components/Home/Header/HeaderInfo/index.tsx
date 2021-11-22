@@ -3,7 +3,7 @@ import React from "react";
 import Information from "./Information";
 import InfoContact from "./InfoContact";
 import { HeaderInfoStyled } from "./styles";
-import { Container, Wrapper } from "../../../../ui/layout";
+import { Container, Wrapper } from "../../../ui/layout";
 
 const HeaderInfo = () => {
   return (

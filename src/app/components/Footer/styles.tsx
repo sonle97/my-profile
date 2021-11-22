@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const FooterStyled = styled.div`
-  padding: 15px 0 60px;
+  padding: 15px 15px 120px;
   text-align: center;
   position: relative;
   img {

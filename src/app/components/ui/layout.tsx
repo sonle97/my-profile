@@ -30,5 +30,8 @@ export const Wrapper = styled.div`
 export const Row = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;

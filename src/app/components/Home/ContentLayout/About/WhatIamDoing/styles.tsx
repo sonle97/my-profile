@@ -10,7 +10,7 @@ export const WhatIamDoingStyled = styled.div`
       padding: 18px;
       border-radius: 13px;
       border: 1px solid #00000040;
-      &:nth-child(2n-1) {
+      &:nth-of-type(2n-1) {
         margin-right: 0px;
       }
     }
@@ -20,7 +20,7 @@ export const WhatIamDoingStyled = styled.div`
       .item {
         width: calc((100% / 2) - 10px);
         padding: 25px 20px;
-        &:nth-child(2n-1) {
+        &:nth-of-type(2n-1) {
           margin-right: 20px;
         }
       }
