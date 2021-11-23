@@ -74,7 +74,7 @@ export const TimeLineListStyled = styled.div`
         width: 18px;
         height: 18px;
         border-radius: 100%;
-        right: 102%;
+        right: 106%;
         top: 55px;
         transform: translateY(-7px);
         transition: 0.4s;
@@ -104,6 +104,29 @@ export const TimeLineListStyled = styled.div`
         }
         &::after {
           background: #ff014f;
+        }
+      }
+    }
+    @media screen and (min-width: 414px) {
+      .inner {
+        ::after {
+          right: 104%;
+        }
+      }
+    }
+
+    @media screen and (min-width: 540px) {
+      .inner {
+        ::after {
+          right: 103%;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .inner {
+        ::after {
+          right: 102%;
         }
       }
     }

@@ -49,6 +49,8 @@ export const TabStyled = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: column;
     padding: 25px 15px;
+    position: sticky;
+    top: 25px;
   }
 `;
 
